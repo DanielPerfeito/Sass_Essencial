@@ -1,0 +1,26 @@
+
+
+.classe1{
+    ul{
+        background-color: red;
+        border: solid 3px yellow;
+    }
+
+    li{
+        background-color: purple;
+        border: solid 3px white;
+    }
+
+    button{
+        background-color: blue;
+        color:white;
+        cursor: pointer;
+        transition: .4s;
+
+        &:hover{
+            background-color: aqua;
+            
+        }
+    }
+
+}

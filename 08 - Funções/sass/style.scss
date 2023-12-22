@@ -1,0 +1,23 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@function colorTitle($background-color){
+    @if(lightness($background-color) > 50){
+        @return black;
+    }@else{
+        @return white;
+    }
+}
+
+@mixin background-color-mixin($color){
+    background-color: $color;
+    color: colorTitle($color);
+}
+
+.title{
+    height: 100vh;
+    @include background-color-mixin(rgb(170, 87, 87))
+}
